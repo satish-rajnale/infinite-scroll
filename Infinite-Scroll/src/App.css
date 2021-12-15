@@ -1,0 +1,34 @@
+.animeList {
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.singleAnime {
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 300px;
+  border-radius: 8px;
+  font-size: 20px;
+  margin: 2px;
+  display: flex;
+  background-color: #373e47;
+}
+.singleAnime p {
+  line-height: 1;
+  width: 100%;
+  color: #fff;
+  text-overflow: clip;
+  text-justify: kashida;
+  text-align: left;
+  margin-left: 10px;
+}
+.singleAnime img {
+  height: inherit;
+  width: 50px;
+  margin: 0;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
