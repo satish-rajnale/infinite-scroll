@@ -69,3 +69,37 @@ export default function submit(val, setText: (val: string) => void): void {
     setText(text);
   }
 }
+
+// // Input
+// const optionRule =
+//   '{1069} AND ({1070} OR {1071} OR {1072}) AND {1244} AND ({1245} OR {1339})';
+
+// // Output Example
+// /* const output = {
+//   and: [
+//     1069,
+//     { or: [1070, 1071, 1072] },
+//     1244,
+//     { or: [1245, 1339] },
+//   ]
+// }; */
+
+// function oeratorSplitter(str) {
+//   const newstr = str.split('AND');
+//   for (let i = 0; i <= newstr.length - 1; i++) {
+//     if (newstr[i].includes('OR')) {
+//       let val = newstr[i].split('OR');
+//       val.forEach((v, i) => {
+//         return (val[i] = +v.trim().replace(/\{|\(|\)|\}+/g, ''));
+//       });
+//       let orStr = { or: val };
+//       newstr[i] = orStr;
+//     } else {
+//       newstr[i] = +newstr[i].trim().replace(/^\{+|\}+$/g, '');
+//     }
+//   }
+
+//   return { and: newstr };
+// }
+
+// console.log(oeratorSplitter(optionRule));
